@@ -1,10 +1,12 @@
+import styles from '../text.module.scss'; 
+
 export default function PrivacyText() {
   return (
-    <section class="legal-content white-bg">
-      <div class="container">
-        <div class="col">
-          <h3>1. Who we are and important information</h3>
-          <h6>Purpose of this privacy notice</h6>
+    <section className={`${styles.legalContent} white-bg`}>
+      <div className="container">
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>1. Who we are and important information</h2>
+          <h6 className={styles.legalContent__heading6}>Purpose of this privacy notice</h6> 
           <p>
             This privacy notice aims to give you information on how Wrangle
             collects and processes your personal data through your use of this
@@ -20,7 +22,7 @@ export default function PrivacyText() {
             using your data. This privacy notice supplements the other notices
             and is not intended to override them.
           </p>
-          <h6>Controller</h6>
+          <h6 className={styles.legalContent__heading6}>Controller</h6>
           <p>
             Wrangle Group Ltd is the controller and responsible for your
             personal data (collectively referred to as “Wrangle”, "we", "us" or
@@ -50,7 +52,7 @@ export default function PrivacyText() {
             and current. Please keep us informed if your personal data changes
             during your relationship with us.
           </p>
-          <h6>Third-party links</h6>
+          <h6 className={styles.legalContent__heading6}>Third-party links</h6>
           <p>
             This website may include links to third-party websites, plug-ins and
             applications. Clicking on those links or enabling those connections
@@ -60,8 +62,8 @@ export default function PrivacyText() {
             you to read the privacy notice of every website you visit.
           </p>
         </div>
-        <div class="col">
-          <h3>2. The data we collect about you</h3>
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>2. The data we collect about you</h2>
           <p>
             Personal data, or personal information, means any information about
             an individual from which that person can be identified. It does not
@@ -140,8 +142,8 @@ export default function PrivacyText() {
             at the time.
           </p>
         </div>
-        <div class="col">
-          <h3>3. How is your personal data collected?</h3>
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>3. How is your personal data collected?</h2>
           <p>
             We use different methods to collect data from and about you
             including through:
@@ -201,8 +203,8 @@ export default function PrivacyText() {
             </ul>
           </ul>
         </div>
-        <div class="col">
-          <h3>4. How we use your personal data</h3>
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>4. How we use your personal data</h2>
           <p>
             We will only use your personal data when the law allows us to. Most
             commonly, we will use your personal data in the following
@@ -236,7 +238,7 @@ export default function PrivacyText() {
             ground we are relying on to process your personal data where more
             than one ground has been set out in the table below.
           </p>
-          <div class="table-container">
+          <div className={styles.tableContainer}>
             <table>
               <tbody>
                 <tr>
@@ -396,14 +398,14 @@ export default function PrivacyText() {
               </tbody>
             </table>
           </div>
-          <h6>Marketing</h6>
+          <h6 className={styles.legalContent__heading6}>Marketing</h6>
           <p>
             We strive to provide you with choices regarding certain personal
             data uses, particularly around marketing and advertising. We have
             established the following personal data control mechanisms:
           </p>
 
-          <h6>Promotional offers from us </h6>
+          <h6 className={styles.legalContent__heading6}>Promotional offers from us </h6>
           <p>
             We may use your Identity, Contact, Technical, Usage and Profile Data
             to form a view on what we think you may want or need, or what may be
@@ -418,14 +420,14 @@ export default function PrivacyText() {
             have not opted out of receiving that marketing.{" "}
           </p>
 
-          <h6>Third-party marketing </h6>
+          <h6 className={styles.legalContent__heading6}>Third-party marketing </h6>
           <p>
             We will get your express opt-in consent before we share your
             personal data with any company outside of Wrangle Group Ltd of
             companies for marketing purposes.{" "}
           </p>
 
-          <h6>Opting out </h6>
+          <h6 className={styles.legalContent__heading6}>Opting out </h6>
           <p>
             You can ask us to stop sending you marketing messages at any time by
             following the unsubscribe links on any marketing message sent to you
@@ -438,7 +440,7 @@ export default function PrivacyText() {
             transactions.{" "}
           </p>
 
-          <h6>Cookies</h6>
+          <h6 className={styles.legalContent__heading6}>Cookies</h6>
           <p>
             You can set your browser to refuse all or some browser cookies, or
             to alert you when websites set or access cookies. If you disable or
@@ -447,7 +449,7 @@ export default function PrivacyText() {
             about the cookies we use, please see our cookie policy.{" "}
           </p>
 
-          <h6>Change of purpose </h6>
+          <h6 className={styles.legalContent__heading6}>Change of purpose </h6>
           <p>
             We will only use your personal data for the purposes for which we
             collected it, unless we reasonably consider that we need to use it
@@ -467,8 +469,8 @@ export default function PrivacyText() {
             is required or permitted by law.{" "}
           </p>
         </div>
-        <div class="col">
-          <h3>5. Disclosures of your personal data</h3>
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>5. Disclosures of your personal data</h2>
           <p>
             We may have to share your personal data with the parties set out
             below for the purposes set out in the table in paragraph 4 above.{" "}
@@ -496,8 +498,8 @@ export default function PrivacyText() {
             data for specified purposes and in accordance with our instructions.{" "}
           </p>
         </div>
-        <div class="col">
-          <h3>6. International transfers </h3>
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>6. International transfers </h2>
           <p>
             We share your personal data within Wrangle Group Ltd. This will
             involve transferring your data outside the European Economic Area
@@ -544,8 +546,8 @@ export default function PrivacyText() {
             EEA.
           </p>
         </div>
-        <div class="col">
-          <h3>7. Data security</h3>
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>7. Data security</h2>
           <p>
             We have put in place appropriate security measures to prevent your
             personal data from being accidentally lost, used or accessed in an
@@ -562,8 +564,8 @@ export default function PrivacyText() {
             breach where we are legally required to do so.
           </p>
         </div>
-        <div class="col">
-          <h3>8. Data retention</h3>
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>8. Data retention</h2>
           <p>How long will you use my personal data for?</p>
           <p>
             We will only retain your personal data for as long as necessary to
@@ -596,8 +598,8 @@ export default function PrivacyText() {
             without further notice to you.
           </p>
         </div>
-        <div class="col">
-          <h3>9. Your legal rights</h3>
+        <div className={styles.legalContent__col}>
+          <h2 className={styles.legalContent__heading2}>9. Your legal rights</h2>
           <p>
             Under certain circumstances, you have rights under data protection
             laws in relation to your personal data. Please click on the links
@@ -715,7 +717,7 @@ export default function PrivacyText() {
               <a href="mailto:hello@wrangleapp.io">contact us</a>.
             </li>
           </ul>
-          <h6>No fee usually required</h6>
+          <h6 className={styles.legalContent__heading6}>No fee usually required</h6>
           <p>
             You will not have to pay a fee to access your personal data (or to
             exercise any of the other rights). However, we may charge a
@@ -723,7 +725,7 @@ export default function PrivacyText() {
             excessive. Alternatively, we may refuse to comply with your request
             in these circumstances.
           </p>
-           <h6>What we may need from you  </h6>
+           <h6 className={styles.legalContent__heading6}>What we may need from you  </h6>
           <p>
             We may need to request specific information from you to help us
             confirm your identity and ensure your right to access your personal
@@ -733,7 +735,7 @@ export default function PrivacyText() {
             for further information in relation to your request to speed up our
             response.
           </p>
-           <h6>Time limit to respond  </h6>
+           <h6 className={styles.legalContent__heading6}>Time limit to respond  </h6>
           <p>
             We try to respond to all legitimate requests within one month.
             Occasionally it may take us longer than a month if your request is
@@ -741,10 +743,10 @@ export default function PrivacyText() {
             case, we will notify you and keep you updated.
           </p>
         </div>
-        <div class="col">
+        <div className={styles.legalContent__col}>
           <a id="glossary"></a>
-          <h3>10. Glossary </h3>
-          <h4>Lawful Basis</h4>
+          <h2 className={styles.legalContent__heading2}>10. Glossary </h2>
+          <h4 className={styles.legalContent__heading4}>Lawful Basis</h4>
           <p>
             Legitimate Interest means the interest of our business in conducting
             and managing our business to enable us to give you the best
@@ -770,15 +772,15 @@ export default function PrivacyText() {
             regulatory obligation that we are subject to.
           </p>
 
-          <h4>Third Parties</h4>
-          <h6>Internal Third Parties</h6>
+          <h4 className={styles.legalContent__heading4}>Third Parties</h4>
+          <h6 className={styles.legalContent__heading6}>Internal Third Parties</h6>
           <p>
             Other companies within Wrangle Group Ltd (acting as joint
             controllers or processors) and provide IT and system administration
             services and undertake leadership reporting.
           </p>
 
-          <h6>External Third Parties </h6>
+          <h6 className={styles.legalContent__heading6}>External Third Parties </h6>
           <ul>
             <li>
               Service providers acting as processors based in the EU who provide
@@ -799,10 +801,10 @@ export default function PrivacyText() {
           </ul>
         </div>
 
-        <div class="col">
+        <div className={styles.legalContent__col}>
           <hr />
-          <div class="terms-closing">
-            <h6>Wrangle Group Ltd</h6>
+          <div className="terms-closing">
+            <h6 className={styles.legalContent__heading6}>Wrangle Group Ltd</h6>
             <p>4 Holborn Viaduct, International House, London, EC1A 2BN</p>
             <p>
               <b>Registered office:</b> Wrangle Group Ltd, 24 Holborn Viaduct,

@@ -1,0 +1,72 @@
+@import '../styles/variables.scss';
+
+.legalContent{
+  &__col{
+    margin-bottom: 40px;
+  }
+  &__heading2{
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 600;
+    letter-spacing: -1.3px;
+    color: $purple;
+  }
+  &__heading4{
+    font-size: 1.4rem;
+    color: $purple;
+  }
+  &__heading6{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  p{
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  ul{
+    list-style-type: none;
+    padding-left: 18px;
+    margin: 0;
+    margin-bottom: 16px;
+
+    li{
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 5px;
+
+      &:before {
+        content: '-';
+        position: absolute;
+        margin-left: -20px;
+        color: $purple;
+      }
+    }
+  }
+}
+
+.tableContainer{
+  overflow-x: auto;
+  margin-bottom: 40px;
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    border-collapse: expression('separate', cellSpacing='10px');
+
+    th,td {
+      background: $purple;
+      color: $white;
+      padding: 5px 10px;
+      text-align: left;
+    }
+    td{
+      background: transparent;
+      color: $purple;
+    }
+
+    tr:nth-child(even) {
+      background: #27275338;
+    }
+  }
+}
